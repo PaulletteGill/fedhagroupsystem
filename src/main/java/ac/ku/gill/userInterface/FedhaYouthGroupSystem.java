@@ -3,6 +3,7 @@ package ac.ku.gill.userInterface;
 import ac.ku.gill.userInterface.panels.LoansPanel;
 import ac.ku.gill.userInterface.panels.MembersPanel;
 import ac.ku.gill.userInterface.panels.ReportsPanel;
+import ac.ku.gill.userInterface.panels.SharesPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,13 +26,13 @@ public class FedhaYouthGroupSystem extends JFrame {
         // Create instances of each panel
         MembersPanel membersPanel = new MembersPanel();
         LoansPanel loansPanel = new LoansPanel();
-//        SharesPanel sharesPanel = new SharesPanel();
+        SharesPanel sharesPanel = new SharesPanel();
         ReportsPanel reportsPanel = new ReportsPanel();
 
         // Add the panels to the mainPanel with a unique name
         mainPanel.add(membersPanel, "Members");
         mainPanel.add(loansPanel, "Loans");
-//        mainPanel.add(sharesPanel, "Shares");
+        mainPanel.add(sharesPanel, "Shares");
         mainPanel.add(reportsPanel, "Reports");
 
         // Create buttons for the main menu
